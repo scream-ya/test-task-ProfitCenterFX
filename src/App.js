@@ -1,10 +1,13 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import Layout from './Layout';
 
 function App() {
   return (
-    <div>
-      start
-    </div>
+    <Provider store={store}>
+      <Layout />
+    </Provider>
   );
 }
 
