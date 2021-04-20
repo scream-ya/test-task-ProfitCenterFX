@@ -63,27 +63,27 @@ function Statistic() {
 			<div className='statisticButtonBlock'>
 				<button
 					disabled={socket}
-					className='statisticButton'
+					className='button'
 					onClick={handlerOnclickStart}
 				>
 					Старт
 				</button>
 					<button
 						disabled={!count}
-						className='statisticButton'
+						className='button'
 						onClick={handlerOnclickStatistics}
 					>
 						Статистика
 					</button>
 					<button
 						disabled={!socket}
-						className='statisticButton'
+						className='button'
 						onClick={handlerOnclickStop}
 					>
 						Стоп
 					</button>
 			</div>
-			<div className='statisticResultBlock'>
+			<div className='resultBlock'>
 				<span><b>Среднее отклонение: </b> {deviationAvg || '-'}</span>
 				<span><b>Стандартное отклонение: </b> {deviationStandard || '-'}</span>
 			</div>
